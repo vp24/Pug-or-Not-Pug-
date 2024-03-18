@@ -42,6 +42,10 @@ const ImageDetection = () => {
   return (
     <div className="image-detection">
       <h2>Is this a Pug?</h2>
+      <p className="description">
+  Enter an image URL to determine if it contains a pug.<br />
+  Note: The app's accuracy may vary for non-pug images.
+</p>
       <div className="input-container">
         <input
           type="text"
