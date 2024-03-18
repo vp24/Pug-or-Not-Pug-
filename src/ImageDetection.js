@@ -13,7 +13,7 @@ const ImageDetection = () => {
 
   const handleDetection = () => {
     setIsLoading(true);
-    axios.post('http://localhost:3000/detect', { input: imageUrl })
+    axios.post('https://pugdetectionapi.onrender.com/detect', { input: imageUrl })
       .then(response => {
         const concepts = response.data.outputs[0].data.concepts;
         const filteredConcepts = concepts.filter(concept => concept.value > 0.5);
